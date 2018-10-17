@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-lg-9">
+    <h3>Cidenet Angular App</h3>
+    <h4>Registro de Empleados</h4>
+    <br>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-3">
+    <a [routerLink] = "['/save']"><i class="fas fa-plus" style="text-align: right"></i> Agregar Empleado</a>
+  </div>
+  <div class="col-lg-3">
+    <a [routerLink] = "['/list']"><i class="fas fa-list-ul" style="text-align: right"></i> Lista Empleados</a>
+  </div>
+</div>
+
+<section id="main" class="col-lg-12">
+  <!--Component-->
+  <router-outlet></router-outlet>
+</section>
+<!--<app-list>List:</app-list>
+<app-save>Save:</app-save>-->

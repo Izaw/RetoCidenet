@@ -1,0 +1,21 @@
+  <div class="row" class="table-responsive">
+    <table class="table">
+      <caption>Lista Empleados</caption>
+      <thead>
+        <tr>
+          <th>Cedula</th>
+          <th>Nombre Completo</th>
+          <th>Fecha Ingreso</th>
+          <th>Salario Base</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tr *ngFor = "let employe of employes">
+        <td>{{employe.cedula}}</td>
+        <td>{{employe.nombreCompleto}}</td>
+        <td>{{employe.fechaIngreso | date:'MM/dd/yyyy'}}</td>
+        <td>{{employe.salario | currency}}</td>
+        <td><a  [routerLink] = "['/']"><i class="fas fa-pencil-alt"></i></a>&nbsp;&nbsp;&nbsp;<a><i class="far fa-trash-alt"></i></a></td>
+      </tr>
+    </table>
+  </div>
